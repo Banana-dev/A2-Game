@@ -1,16 +1,25 @@
 $( document ).ready(function() {
 
+    var i = 0;
+    $('#btn_Theme').click(function(){
+        i += 1;
+        $('body').css("background-image", "url(assets/img/DECOR_" + i +".jpg)");
+        $(".ENTITY_1").attr("src","assets/img/ENTITY_" + i + "_1.png");
+        $(".ENTITY_2").attr("src","assets/img/ENTITY_" + i + "_2.png");
+        $(".ENTITY_3").attr("src","assets/img/ENTITY_" + i + "_3.png");
+
+    });
     // Variables
-    var leftMonkeyTarget = $('.monkey1');
-    var bottomMonkeyTarget = $('.monkey2');
-    var rightMonkeyTarget = $('.monkey3');
+    var leftMonkeyTarget = $('.ENTITY_1');
+    var bottomMonkeyTarget = $('.ENTITY_2');
+    var rightMonkeyTarget = $('.ENTITY_3');
     var scorePanel = $('.score');
     var victoryPanel = $('.victory');
 
     // Loop function
     setInterval(leftMonkey, 8000);
 
-    // Init function
+    // Init function 
     bottomMonkey();
     initBananas();
     var bananasTarget = $('.bananas');
