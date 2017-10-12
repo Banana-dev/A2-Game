@@ -3,6 +3,9 @@ $( document ).ready(function() {
     var i = 0;
     $('#btn_Theme').click(function(){
         i += 1;
+        if (i == 4){
+            i = 0;
+        };
         $('body').css("background-image", "url(assets/img/DECOR_" + i +".jpg)");
         $(".ENTITY_1").attr("src","assets/img/ENTITY_" + i + "_1.png");
         $(".ENTITY_2").attr("src","assets/img/ENTITY_" + i + "_2.png");
