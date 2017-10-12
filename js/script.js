@@ -6,6 +6,7 @@ $( document ).ready(function() {
         $(".CountTheme").attr("src","assets/img/COUNT_" + N_Theme + ".png");
         $("body").css("cursor", "url(assets/img/CURSOR_" + N_Theme +".png), pointer");
     $('#btn_Theme').click(function(){
+<<<<<<< HEAD
         N_Theme += 1;
         if (N_Theme == 4)
         {
@@ -19,6 +20,16 @@ $( document ).ready(function() {
         $(".bananas").attr("src","assets/img/OBJECT_" + N_Theme + ".png");
         $(".CountTheme").attr("src","assets/img/COUNT_" + N_Theme + ".png");
         $("body").css("cursor", "url(assets/img/CURSOR_" + N_Theme +".png), pointer");
+=======
+        i += 1;
+        if (i == 4){
+            i = 0;
+        };
+        $('body').css("background-image", "url(assets/img/DECOR_" + i +".jpg)");
+        $(".ENTITY_1").attr("src","assets/img/ENTITY_" + i + "_1.png");
+        $(".ENTITY_2").attr("src","assets/img/ENTITY_" + i + "_2.png");
+        $(".ENTITY_3").attr("src","assets/img/ENTITY_" + i + "_3.png");
+>>>>>>> 7f8e9de8d02f69cfd145e858dcda4f0a06559942
 
     });
     // Variables
