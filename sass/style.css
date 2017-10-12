@@ -1,17 +1,17 @@
 body 
 {
-  cursor: url("../assets/img/cursor.png"), pointer;
   max-width: 100vw;
   min-height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
   position: relative;
-  background-image: url("../assets/img/Jungle.jpg");
+  background-image: url("../assets/img/DECOR_0.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1; 
+  cursor: url("../assets/img/CURSOR_0.png"), pointer;
 }
 img 
 {
